@@ -1,333 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Developmentz.site</title>
-
-<style>
-
-body{
-font-family:Arial, sans-serif;
-margin:0;
-background:#f4f6fa;
-color:#222;
-}
-
-header{
-background:#111;
-color:white;
-padding:25px;
-text-align:center;
-}
-
-nav a{
-color:white;
-margin:0 10px;
-text-decoration:none;
-}
-
-section{
-padding:50px 20px;
-max-width:1000px;
-margin:auto;
-text-align:center;
-}
-
-h1,h2{
-margin-bottom:20px;
-}
-
-.card-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-width:220px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-button{
-background:dodgerblue;
-color:white;
-border:none;
-padding:12px 25px;
-border-radius:8px;
-font-size:16px;
-cursor:pointer;
-}
-
-input,select,textarea{
-width:260px;
-padding:10px;
-margin:8px;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-.review{
-background:white;
-padding:10px;
-border-radius:8px;
-margin:10px;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developmentz.Site</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header, footer { background: #222; color: white; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; }
+    main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    section { margin-bottom: 2rem; }
+    h1, h2, h3 { color: #222; }
+    .pricing, .faq, .services { background: #fff; padding: 1rem; border-radius: 5px; }
+    .pricing div, .services div, .faq div { margin-bottom: 1rem; }
+    button { background: #222; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 5px; }
+  </style>
 </head>
-
 <body>
 
 <header>
-<h1>Developmentz.site</h1>
-<p>Custom Websites, Hosting & Domains</p>
-
-<nav>
-<a href="#pricing">Pricing</a>
-<a href="#services">Services</a>
-<a href="#faq">FAQ</a>
-<a href="#apply">Apply</a>
-</nav>
+  <h1>Developmentz.Site</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
+<main>
+  <section id="intro">
+    <h2>Professional Websites Made for You</h2>
+    <p>We design, develop, and host websites tailored to your needs, from free subdomains to custom domains. Our mission is to make each website unique.</p>
+  </section>
 
-<section>
+  <section id="example">
+    <h2>Example Subdomain</h2>
+    <p>Check out an example site for a fictional character Alex, Minecraft themed: <a href="https://test.developmentz.site" target="_blank">test.developmentz.site</a></p>
+  </section>
 
-<h2>Professional Website Development</h2>
+  <section id="pricing" class="pricing">
+    <h2>Pricing</h2>
+    <div>
+      <h3>Webdesign</h3>
+      <p>Simple: €20-70, 5 revisions</p>
+      <p>Medium: €71-230, 10 revisions</p>
+      <p>Complex: €230-1,000, 15 revisions</p>
+      <p>Professional: €1,000+, unlimited revisions</p>
+    </div>
+    <div>
+      <h3>Hosting</h3>
+      <p>Basic Hosting: €3/month or €35/year</p>
+      <p>Email Hosting: €5/month + €0.25 per extra mailbox</p>
+    </div>
+    <div>
+      <h3>Domains</h3>
+      <p>Subdomain: Free</p>
+      <p>Custom domain: €6/month or €65/year</p>
+    </div>
+  </section>
 
-<p>
-We design and build websites tailored to your needs.
-From free subdomains to fully custom domains.
-</p>
+  <section id="faq" class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div>
+      <h3>Do I get refunds?</h3>
+      <p>Refunds on hosting aren't possible. Partial refunds may apply if little work has been done.</p>
+    </div>
+    <div>
+      <h3>What are delivery times?</h3>
+      <p>Standard: 1–5 days, Priority: 1–3 days (+20–30%), Urgent: Immediate start (+50%)</p>
+    </div>
+    <div>
+      <h3>Are the websites made with WordPress?</h3>
+      <p>No, all websites are custom-coded with JS, C++, CSS, HTML, and more.</p>
+    </div>
+  </section>
 
-<a href="https://test.developmentz.site">
-<button>View Example Website</button>
-</a>
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div>
+      <h3>Coding</h3>
+      <p>JS, C++, CSS, HTML, everything to maximize website functionality.</p>
+    </div>
+    <div>
+      <h3>Website Design</h3>
+      <p>Custom design and editing until it matches your vision perfectly.</p>
+    </div>
+  </section>
 
-</section>
-
-
-<section id="pricing">
-
-<h2>Pricing</h2>
-
-<h3>Web Design</h3>
-
-<div class="card-container">
-
-<div class="card">
-<h3>Simple</h3>
-<p>5 revisions</p>
-<p>€20-70</p>
-</div>
-
-<div class="card">
-<h3>Medium</h3>
-<p>10 revisions</p>
-<p>€71-230</p>
-</div>
-
-<div class="card">
-<h3>Complex</h3>
-<p>15 revisions</p>
-<p>€230-1000</p>
-</div>
-
-<div class="card">
-<h3>Professional</h3>
-<p>Unlimited revisions</p>
-<p>€1000+</p>
-</div>
-
-</div>
-
-
-<h3 style="margin-top:40px">Hosting</h3>
-
-<p>Basic Hosting: €3/month or €35/year</p>
-<p>Email Hosting: €5/month (+€0.25 per extra mailbox)</p>
-
-<h3 style="margin-top:40px">Domains</h3>
-
-<p>Subdomain: Free</p>
-<p>Custom Domain: €6/month or €65/year</p>
-
-</section>
-
-
-<section id="services">
-
-<h2>Services</h2>
-
-<div class="card-container">
-
-<div class="card">
-<h3>Coding</h3>
-<p>Custom websites built using HTML, CSS and JavaScript.</p>
-</div>
-
-<div class="card">
-<h3>Design</h3>
-<p>Website design tailored to your style and needs.</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section id="faq">
-
-<h2>FAQ</h2>
-
-<p><strong>Refunds</strong><br>
-Hosting is non-refundable. Partial refunds may be possible if little work was done.</p>
-
-<p><strong>Delivery Time</strong><br>
-Standard: 1-5 days<br>
-Priority: 1-3 days<br>
-Urgent: Immediate start</p>
-
-<p><strong>Technology</strong><br>
-Sites are built with HTML, CSS, JavaScript and other programming tools.</p>
-
-</section>
-
-
-<section id="apply">
-
-<h2>Request a Website</h2>
-
-<form id="requestForm">
-
-<input type="url" id="domain" placeholder="Requested domain/subdomain" required><br>
-
-<input type="text" id="user" placeholder="Discord username or email" required><br>
-
-<select id="plan">
-<option>Simple</option>
-<option>Medium</option>
-<option>Complex</option>
-<option>Professional</option>
-</select><br>
-
-<input type="text" id="promo" placeholder="Promo code (optional)"><br>
-
-<button type="submit">Submit Request</button>
-
-</form>
-
-<p id="requestMessage"></p>
-
-</section>
-
-
-<section>
-
-<h2>Customer Feedback</h2>
-
-<form id="reviewForm">
-
-<input type="text" id="discover" placeholder="How did you find us?"><br>
-
-<select id="rating">
-<option>⭐</option>
-<option>⭐⭐</option>
-<option>⭐⭐⭐</option>
-<option>⭐⭐⭐⭐</option>
-<option>⭐⭐⭐⭐⭐</option>
-</select><br>
-
-<textarea id="favorite" placeholder="What do you like most?"></textarea><br>
-
-<textarea id="improve" placeholder="What should we improve?"></textarea><br>
-
-<button type="submit">Submit Review</button>
-
-</form>
-
-<div id="reviews"></div>
-
-</section>
-
+  <section id="contact">
+    <h2>Contact / Subscribe</h2>
+    <form>
+      <label for="service">Select Service:</label>
+      <select id="service">
+        <option>Simple</option>
+        <option>Medium</option>
+        <option>Complex</option>
+        <option>Professional</option>
+      </select>
+      <br><br>
+      <button type="submit">Confirm</button>
+    </form>
+  </section>
+</main>
 
 <footer>
-
-<p>© 2026 Developmentz.site</p>
-
+  <p>© 2026 Developmentz.Site | All Rights Reserved</p>
 </footer>
-
-
-<script>
-
-
-const webhook="YOUR_DISCORD_WEBHOOK";
-
-
-document.getElementById("requestForm").addEventListener("submit",function(e){
-
-e.preventDefault();
-
-const domain=document.getElementById("domain").value;
-const user=document.getElementById("user").value;
-const plan=document.getElementById("plan").value;
-const promo=document.getElementById("promo").value;
-
-if(promo && promo!=="DEVLAUNCH"){
-document.getElementById("requestMessage").innerText="Invalid promo code.";
-return;
-}
-
-fetch(webhook,{
-method:"POST",
-headers:{"Content-Type":"application/json"},
-body:JSON.stringify({
-content:`New Website Request
-
-Domain: ${domain}
-User: ${user}
-Plan: ${plan}
-Promo: ${promo||"None"}`
-})
-});
-
-document.getElementById("requestMessage").innerText="Request sent!";
-});
-
-
-const reviewsDiv=document.getElementById("reviews");
-
-document.getElementById("reviewForm").addEventListener("submit",function(e){
-
-e.preventDefault();
-
-const rating=document.getElementById("rating").value;
-const favorite=document.getElementById("favorite").value;
-
-const review=document.createElement("div");
-review.className="review";
-review.innerHTML=`<strong>${rating}</strong><p>${favorite}</p>`;
-
-reviewsDiv.appendChild(review);
-
-});
-
-
-</script>
 
 </body>
 </html>
