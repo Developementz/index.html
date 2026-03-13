@@ -1,68 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developementz</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="container">
-    <header>
-      <h1>Developementz</h1>
-    </header>
-      <div class="mid">
-        <form id="dcForm">
-          <input type="text" id="subdomain" placeholder="Your subdomain.developmentz.site" required><br>
-          <input type="text" id="username" placeholder="Discord username" required><br>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-          <p>What subscription would you like?</p>
-          <select id="subscription" required>
-            <option>EZ Free</option>
-            <option>EZ Basic</option>
-            <option>EZ Pro</option>
-            <option>EZ Ultimate</option>
-          </select><br>
+<title>Developmentz.site</title>
 
-          <button type="submit">Confirm</button>
-        </form>
+<style>
 
-        <script>
-          document.getElementById("dcForm").addEventListener("submit", function(e) {
-          e.preventDefault();
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f4f6fa;
+color:#222;
+}
 
-            const subdomain = document.getElementById("subdomain").value;
-            const username = document.getElementById("username").value;
-            const subscription = document.getElementById("subscription").value;
-  
-            const webhookURL = "https://discord.com/api/webhooks/1441816875339087902/7r-7lgsdKr3JeviD1tFalVPUJX1uzIN7TzXvY1fzKtLWYiq9wOo_T_lfUF1EiLV2scjB";
+header{
+background:#111;
+color:white;
+padding:25px;
+text-align:center;
+}
 
-            const payload = {
-              content: `**New Subdomain Submission**
-              **Subdomain:** ${subdomain}
-              **Discord Username:** ${username}
-              **Subscription:** ${subscription}
-              @everyone`
-            };
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+}
 
-            fetch(webhookURL, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json"
-              },
-              body: JSON.stringify(payload)
-            })
-            .then(() => alert("We recieved you're request!"))
-            .catch(err => alert("Error: " + err));
-          });
-        </script>
-      </div>
-    <footer>
-      <h3>
-        © 2025 Developementz • Made by Mopy & PimWilTaart125<br>
-        Free Subdomains For Everyone
-      </h3>
-    </footer>
-    </div>
-  </body>
+section{
+padding:50px 20px;
+max-width:1000px;
+margin:auto;
+text-align:center;
+}
+
+h1,h2{
+margin-bottom:20px;
+}
+
+.card-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+width:220px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+button{
+background:dodgerblue;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+input,select,textarea{
+width:260px;
+padding:10px;
+margin:8px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.review{
+background:white;
+padding:10px;
+border-radius:8px;
+margin:10px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Developmentz.site</h1>
+<p>Custom Websites, Hosting & Domains</p>
+
+<nav>
+<a href="#pricing">Pricing</a>
+<a href="#services">Services</a>
+<a href="#faq">FAQ</a>
+<a href="#apply">Apply</a>
+</nav>
+</header>
+
+
+<section>
+
+<h2>Professional Website Development</h2>
+
+<p>
+We design and build websites tailored to your needs.
+From free subdomains to fully custom domains.
+</p>
+
+<a href="https://test.developmentz.site">
+<button>View Example Website</button>
+</a>
+
+</section>
+
+
+<section id="pricing">
+
+<h2>Pricing</h2>
+
+<h3>Web Design</h3>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Simple</h3>
+<p>5 revisions</p>
+<p>€20-70</p>
+</div>
+
+<div class="card">
+<h3>Medium</h3>
+<p>10 revisions</p>
+<p>€71-230</p>
+</div>
+
+<div class="card">
+<h3>Complex</h3>
+<p>15 revisions</p>
+<p>€230-1000</p>
+</div>
+
+<div class="card">
+<h3>Professional</h3>
+<p>Unlimited revisions</p>
+<p>€1000+</p>
+</div>
+
+</div>
+
+
+<h3 style="margin-top:40px">Hosting</h3>
+
+<p>Basic Hosting: €3/month or €35/year</p>
+<p>Email Hosting: €5/month (+€0.25 per extra mailbox)</p>
+
+<h3 style="margin-top:40px">Domains</h3>
+
+<p>Subdomain: Free</p>
+<p>Custom Domain: €6/month or €65/year</p>
+
+</section>
+
+
+<section id="services">
+
+<h2>Services</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Coding</h3>
+<p>Custom websites built using HTML, CSS and JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>Design</h3>
+<p>Website design tailored to your style and needs.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="faq">
+
+<h2>FAQ</h2>
+
+<p><strong>Refunds</strong><br>
+Hosting is non-refundable. Partial refunds may be possible if little work was done.</p>
+
+<p><strong>Delivery Time</strong><br>
+Standard: 1-5 days<br>
+Priority: 1-3 days<br>
+Urgent: Immediate start</p>
+
+<p><strong>Technology</strong><br>
+Sites are built with HTML, CSS, JavaScript and other programming tools.</p>
+
+</section>
+
+
+<section id="apply">
+
+<h2>Request a Website</h2>
+
+<form id="requestForm">
+
+<input type="url" id="domain" placeholder="Requested domain/subdomain" required><br>
+
+<input type="text" id="user" placeholder="Discord username or email" required><br>
+
+<select id="plan">
+<option>Simple</option>
+<option>Medium</option>
+<option>Complex</option>
+<option>Professional</option>
+</select><br>
+
+<input type="text" id="promo" placeholder="Promo code (optional)"><br>
+
+<button type="submit">Submit Request</button>
+
+</form>
+
+<p id="requestMessage"></p>
+
+</section>
+
+
+<section>
+
+<h2>Customer Feedback</h2>
+
+<form id="reviewForm">
+
+<input type="text" id="discover" placeholder="How did you find us?"><br>
+
+<select id="rating">
+<option>⭐</option>
+<option>⭐⭐</option>
+<option>⭐⭐⭐</option>
+<option>⭐⭐⭐⭐</option>
+<option>⭐⭐⭐⭐⭐</option>
+</select><br>
+
+<textarea id="favorite" placeholder="What do you like most?"></textarea><br>
+
+<textarea id="improve" placeholder="What should we improve?"></textarea><br>
+
+<button type="submit">Submit Review</button>
+
+</form>
+
+<div id="reviews"></div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Developmentz.site</p>
+
+</footer>
+
+
+<script>
+
+
+const webhook="YOUR_DISCORD_WEBHOOK";
+
+
+document.getElementById("requestForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const domain=document.getElementById("domain").value;
+const user=document.getElementById("user").value;
+const plan=document.getElementById("plan").value;
+const promo=document.getElementById("promo").value;
+
+if(promo && promo!=="DEVLAUNCH"){
+document.getElementById("requestMessage").innerText="Invalid promo code.";
+return;
+}
+
+fetch(webhook,{
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify({
+content:`New Website Request
+
+Domain: ${domain}
+User: ${user}
+Plan: ${plan}
+Promo: ${promo||"None"}`
+})
+});
+
+document.getElementById("requestMessage").innerText="Request sent!";
+});
+
+
+const reviewsDiv=document.getElementById("reviews");
+
+document.getElementById("reviewForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const rating=document.getElementById("rating").value;
+const favorite=document.getElementById("favorite").value;
+
+const review=document.createElement("div");
+review.className="review";
+review.innerHTML=`<strong>${rating}</strong><p>${favorite}</p>`;
+
+reviewsDiv.appendChild(review);
+
+});
+
+
+</script>
+
+</body>
 </html>
